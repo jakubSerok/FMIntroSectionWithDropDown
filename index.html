@@ -8,32 +8,117 @@
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <nav>
+    <div class="nav-container">
+      <div class="nav-left">
+        <div class="nav-logo"><img src="./images/logo.svg" alt="navlogo"></div>
+        <ul class="nav-links">
+          <li>
+            Features
+            <img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow-icon">
+            <div class="sub-menu features">
+              <p class="sub-link">
+                <img src="./images/icon-todo.svg" alt="icon">
+                Todo List
+              </p>
+              <p class="sub-link">
+                <img src="./images/icon-calendar.svg" alt="icon">
+                Calendar
+              </p>
+              <p class="sub-link">
+                <img src="./images/icon-reminders.svg" alt="icon">
+                Reminders
+              </p>
+              <p class="sub-link">
+                <img src="./images/icon-planning.svg" alt="icon">
+                Planning
+              </p>
+            </div>
+            
+          </li>
+          <li>
+            Company
+            <img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow-icon">
+            <div class="sub-menu company">
+              <p class="sub-link">History</p>              
+              <p class="sub-link">Our Team</p>   
+              <p class="sub-link">Blog</p>   
+            </div>            
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+      </div>
+      <div class="mobile-menu-btn">
+        <img src="./images/icon-menu.svg" alt="icon">
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-links">
+          <li>
+            <p>
+              Features<img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow-icon">
+            </p>
+            <div class="moblie-sub">
+              <p class="sub-link">
+                <img src="./images/icon-todo.svg" alt="icon">
+                Todo List
+              </p>
+              <p class="sub-link">
+                <img src="./images/icon-calendar.svg" alt="icon">
+                Calendar
+              </p>
+              <p class="sub-link">
+                <img src="./images/icon-reminders.svg" alt="icon">
+                Reminders
+              </p>
+              <p class="sub-link">
+                <img src="./images/icon-planning.svg" alt="icon">
+                Planning
+              </p>
+            </div>
+            <li>
+              Company
+              <img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow-icon">
+              <div class="moblie-sub">
+                <p class="sub-link">History</p>              
+                <p class="sub-link">Our Team</p>   
+                <p class="sub-link">Blog</p>   
+              </div>            
+            </li>
+            <li>Careers</li>
+            <li>About</li>
+          </li>
+        </div>
+      </div>
+      <div class="nav-right">
+        <button class="transparten-btn">Login</button>
+        <button class="outline-btn">Register</button>
+      </div>
+    </div>
+  </nav> 
+  <main>
+    <div class="container">
+      <div class="main-left">
+        <h1>Make <br>remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+        <button class="learn-btn">Learn more</button>
+        <div class="logos">
+          <img src="./images/client-databiz.svg" alt="logo">
+          <img src="./images/client-audiophile.svg" alt="logo">
+          <img src="./images/client-meet.svg" alt="logo">
+          <img src="./images/client-maker.svg" alt="logo">
+        </div>
+      </div>
+      <div class="main-right">
+        <picture><source media="(max-width:800px)" srcset="./images/image-hero-mobile.png"></picture>
+        <img src="./images/image-hero-desktop.png" alt="hero">
+      </div>
+    </div>
+  </main>  
+  <script src="index.js"></script>
 </body>
 </html>

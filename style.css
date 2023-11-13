@@ -133,6 +133,8 @@ main {
 .container{
     height: 100%;
     display: flex;
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 .main-left{
     display: flex;

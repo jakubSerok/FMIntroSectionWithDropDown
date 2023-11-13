@@ -88,7 +88,7 @@ nav{
     color: hsl(0, 0%, 8%);
   }
 .sub-menu {
-  display: none;
+  display: flex;
   flex-direction: column;
   position: absolute;
   background-color: white;
@@ -109,6 +109,9 @@ nav{
   align-items: center;
   width: 150px;
   gap: 0.5rem;
+}
+.hidden{
+  display: none;
 }
 .active .arrow {
   transform: rotate(180deg);
@@ -153,4 +156,89 @@ main {
   }
 .main-right img{
     height: 90%;
+}
+@media screen and (max-width: 800px) {
+    .nav-container{
+      padding-inline: 1rem;
+    }
+    .mobile-menu-btn{
+      display: flex;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .mobile-menu{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 70%;
+      background-color: hsl(0, 0%, 98%);
+      padding: 4rem ;
+    }
+    .mobile-links{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      list-style: none;
+    }
+    .mobile-links li{
+      display: flex;
+      color: hsl(0, 0%, 41%);
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .mobile-links li p {
+      padding-top: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .moblie-sub {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 1rem;
+    }
+    .nav-links {
+      display: none;
+    }
+    .nav-right {
+      display: none;
+    }
+    main{
+      align-items: flex-start;
+    }
+    .container{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .main-left{
+      align-items: center;
+      text-align: center;
+      gap:2rem;
+    }.main-left h1{
+      font-size: 2rem;
+    }
+    .main-left br{
+      display: none;
+    }
+    .hidden{
+      display: none;
+    }
+    .logos{
+      width: 100%;
+      padding-inline: 1rem;
+      flex-wrap: wrap;
+    }
+    .main-right{
+      display: flex;
+      align-items: center;
+      height: 50vh;
+    }
+    .main-right img{      
+      height: 90%;
+      width: 100%;
+  }
 }
